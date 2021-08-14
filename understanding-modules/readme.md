@@ -17,3 +17,8 @@ this generates a pseudo-version number in go.mod for your local dependency
 ```
 cd hello && go run .
 ```
+
+## run tests
+```
+cd greetings && go test
+```
