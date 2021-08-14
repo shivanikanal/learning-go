@@ -22,3 +22,18 @@ cd hello && go run .
 ```
 cd greetings && go test
 ```
+
+## build and run hello module from executable's path (linux or mac)
+```
+cd hello
+go build
+./hello
+```
+
+## install executable without path (linux or mac)
+```
+go list -f '{{.Target}}'
+export PATH=$PATH:/path/to/your/install/directory
+go install
+hello
+```
